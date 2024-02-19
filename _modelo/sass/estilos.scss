@@ -1,0 +1,246 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+@import "header";
+@import "footer";
+
+/*mixin secciones del index*/
+@mixin secciones (){
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            padding: 0.5rem;
+            width: 85%;
+            color: #fff;
+            text-align: center;
+            background-color: #021b49;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            margin-top: 1rem;
+            width: 85%;
+            color: #021b49;
+            font-size: 0.8rem;
+        }
+        button{
+            background-color: #021b49;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            &:hover{
+                background-color: #144aad;
+            }
+        }
+}
+
+/* Estilos Index */
+.contenedorGrilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-areas:
+      "header header header header"
+      "slide slide slide slide"
+      "seccionQuienes seccionQuienes seccionQue seccionQue"
+      "footer footer footer footer";
+    .slide{
+        grid-area: slide;
+    }
+    .seccionQuienes{
+        @include secciones();
+        grid-area: seccionQuienes;
+     }
+    .seccionQue{
+        @include secciones();
+        grid-area: seccionQue;
+    } 
+}
+
+/* Estilos Empresa */
+.contenedorEmpresa{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.3fr 0.3 1fr 0.3fr;
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "subtitulo subtitulo subtitulo subtitulo"
+      "imagen texto texto texto"
+      "footer footer footer footer";
+        .titulo{
+        grid-area: titulo;
+        margin: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dotted #021b49;
+        }
+        .subtitulo{
+            grid-area: subtitulo;
+            margin: 1rem 2rem;
+            padding-bottom: 1rem;
+            font-style: italic;
+        }
+        .imagen{
+            grid-area: imagen;
+            margin: 0 1rem 0 1rem;
+    
+        }
+        .texto{
+            grid-area: texto;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+    
+  }
+
+/* Estilos Servicios */
+.contenedorServicios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.3fr 0.3 1fr 0.3fr;
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "subtitulo subtitulo subtitulo subtitulo"
+      "imagen lista lista lista"
+      "footer footer footer footer";
+      .titulo{
+        grid-area: titulo;
+        margin: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dotted #021b49;
+        }
+        .subtitulo{
+            grid-area: subtitulo;
+            margin: 1rem 2rem;
+            padding-bottom: 1rem;
+            font-style: italic;
+        }
+        .imagen{
+            grid-area: imagen;
+            margin: 0 0 0 2rem;
+            width: 100%;
+        }
+        .lista{
+            grid-area: lista;
+            margin-right: 1rem;
+            ul{            
+                li{
+                    list-style:square;
+                }
+            }
+        }
+}
+
+/* Estilos Certificaciones */
+.contenedorCertificados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.3fr 0.3 1fr 0.3fr;
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "subtitulo subtitulo subtitulo subtitulo"
+      "imagen texto texto texto"
+      "boton boton boton boton"
+      "footer footer footer footer";
+        .titulo{
+        grid-area: titulo;
+        margin: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dotted #021b49;
+        }
+        .subtitulo{
+            grid-area: subtitulo;
+            margin: 1rem 2rem;
+            padding-bottom: 1rem;
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+        .imagen{
+            grid-area: imagen;
+            margin: 0 1rem 0 2rem;
+    
+        }
+        .texto{
+            grid-area: texto;
+            margin-right: 2rem;
+            padding-top: 0.2rem;
+            font-size: 0.8rem;
+        }
+        .boton{
+          grid-area: boton;
+          text-align: right; 
+          margin-right: 2rem;
+          .btn{
+            background-color: #021b49;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            &:hover{
+                background-color: #144aad;
+            }
+          }
+        }
+  }
+
+/*estilos contacto*/
+.contenedorContacto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.3fr 0.3 1fr 0.3fr;
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "texto texto texto texto"
+      "formulario formulario mapa mapa"
+      "footer footer footer footer";
+      .titulo{
+        grid-area: titulo;
+        margin: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dotted #021b49;
+        }
+      .texto{
+        grid-area: texto;
+        margin: 1rem 2rem;
+        padding-bottom: 1rem;
+        font-style: italic;
+      }
+      .formulario{
+        grid-area: formulario;
+        margin: 1rem 2rem;
+        padding-bottom: 1rem;
+        .btn{
+            background-color: #021b49;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            &:hover{
+                background-color: #144aad;
+            }
+            }
+      }
+      .mapa{
+        grid-area: mapa;
+        margin: 0 2rem 1rem 1rem;
+      }
+
+}
+
+@import "mediaQuery";
+

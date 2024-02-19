@@ -1,0 +1,15 @@
+.header{
+    grid-area: header;
+    nav {
+        ul{ 
+            li{
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #021b49;
+                &:hover{
+                    text-decoration: underline;
+                } 
+            }
+         }
+        }
+    }
