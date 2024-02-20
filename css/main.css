@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    
 }
+
 .txtNisa{
     color:#1c7fc2;
 }
 
+/******** HEADER Y NAV *****/
 header {
     display: flex;
     align-items: center;
@@ -34,14 +37,22 @@ header {
     color: #1c7fc2;
 }
 .nav-list li a:hover {
-    color: #1c1c1c;
+    color: #7a7a7a;
 }
 
 .abrir-menu,
 .cerrar-menu {
     display: none;
 }
-/*Cards*/
+/************/
+
+/******** SLIDE *****/
+.slide{
+    visibility: visible;
+    z-index: 1;
+}
+
+/******** CARDS *****/
 .container-card{
 	width: 100%;
 	display: flex;
@@ -105,14 +116,50 @@ header {
 	color: #fff;
 }
 
-/******* btn waap ****/
+/******* INTRO ****/
+
+.container {
+    width: 100%;
+}
+
+.intro-content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    text-align: center;
+    color: #7a7a7a;
+    width: 70%; 
+    margin: 2rem auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    border-top: 0.3rem solid #f3f3f3;
+    padding: 1rem 0 1rem 0;
+}
+
+p {
+    font-size: 1.3rem; 
+}
+
+.txtNisa {
+    color: #007bff; 
+    font-weight: bold;
+}
+
+
+
+/******* BTN WAAP ****/
 .container-boton{
     background-color: #2e6329;
     border: 1px solid #fff;
     position: fixed;
     z-index: 999;
     border-radius: 50%;
-    bottom: 20px;
+    bottom: 15px;
     right: 25px;
     padding: 25px;
     transition: ease 0.3s;
@@ -125,11 +172,11 @@ header {
 }
 
 .boton{
-    width: 30px;
+    width: 2rem;
     transition: ease 1s;
 }
 
-/*=========================FOOTER================================*/
+/******* FOOTER ****/
 
 footer {
     background: #1c7fc2;
@@ -140,13 +187,14 @@ footer p{
     text-align:center;
 }
 #iconos  i {
-    font-size: 26px;
+    font-size: 1rem;
     padding: 0 8px;
     color:#f3f3f3;
 }
 
+/******* MEDIA QUERIES ****/
 
-@media screen and (max-width: 550px) {
+    @media only screen and (min-width:320px) and (max-width:768px){  
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -165,7 +213,7 @@ footer p{
     }
     .logo{
 
-        max-width: 5rem;
+        max-width: 6rem;
         margin-left: 1rem;
     }
     .nav {
@@ -176,6 +224,7 @@ footer p{
         align-items: end;
         gap: 1rem;
         position: absolute;
+        z-index: 999;
         top: 0;
         right: 0;
         bottom: 0;
@@ -184,7 +233,6 @@ footer p{
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 
     }
-
     .nav.visible {
         opacity: 1;
         visibility: visible;
@@ -199,10 +247,17 @@ footer p{
     .nav-list li a {
         color: #ecececec;
     }
-}
-
-@media only screen and (min-width:320px) and (max-width:768px){
-	.container-card{
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; 
+        text-align: center;
+        width: 90%; 
+        margin: 2rem auto;
+    }
+    .container-card{
 		flex-wrap: wrap;
 	}
 	.card{
