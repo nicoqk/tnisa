@@ -2,125 +2,112 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transportes Nisa</title>
-    <meta name="description" content="Servicios de logística y distribución de cargas generales, cargas especiales, logística corporativa, etc.">
-    <meta name="keywords" content="logística, distribución, cargas generales, cargas especiales, cargas peligrosas, camiones, transportes">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Transportes NISA</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <div class="container-boton">
-        <a href="https://wa.me/541160151787" target="_blank">
-            <img class="boton" src="img/waap.png" alt="">
+        <a href="https://wa.me/5491160151787" target="_blank">
+            <img class="boton" src="./img/waap.png" alt="">
         </a>
     </div>
     <header>
-        <img class="logo" src="./img/logo.png" alt="Logo">
+        <img class="logo" src="./img/logo.png" alt="Transportes NISA">
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/empresa.html">Empresa</a></li>
-                <li><a href="html/servicios.html">Servicios</a></li>
-                <li><a href="html/flota.html">Flota</a></li>
-                <li><a href="html/contacto.html">Contacto</a></li>
+                <li><a href="./pages/empresa.html">Empresa</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/flota.html">Flota</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <div id="slider" class="slider">
+        <div class="slider-inner">
+            <img src="./img/slide1.jpg" alt="">
+            <img src="./img/slide2.jpg" alt="">
+            <img src="./img/slide3.jpg" alt="">
+            <img src="./img/slide4.jpg" alt="">
+        </div>
+    </div>
 
-    <section class="slide">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/slide/slide01.jpg" class="d-block w-100 h-60" alt="Transportes Nisa - Cargas Generales">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/slide/slide02.jpg" class="d-block w-100 h-60" alt="Transportes Nisa - Cargas Peligrosas.">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/slide/slide03.jpg" class="d-block w-100 h-60" alt="Transportes Nisa - Logística corporativa">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>  
+    <section class="intro-content"><h1>En <span class="txtCEP">Transportes NISA</span> brindamos soluciones integrales de logística, distribución y movimientos especiales de mercaderías</h1>
+        <p>Nuestros más de 50 años en el rubro le garantizan un servicio eficiente y eficaz para el transporte de sus mercancías.</p>
     </section>
-
-    <!-- <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
-        <h1 class="p-3 fs-2 border-top border-3">En <span class="txtNisa fw-bold">Transportes Nisa</span> brindamos soluciones integrales de logística, distribución y movimientos especiales de mercaderías</h1>
-         <p class="p-3  fs-4">
-          Nuestros mas de <span class="txtNisa">50 años en el rubro</span> le garantizan un servicio eficiente y eficaz para el trasporte de sus mercancías.       
-         </p>   
-    </section> -->
-
-    <section class="intro-content">
-        
-            <h1>En <span class="txtNisa">Transportes Nisa</span> brindamos soluciones integrales de logística, distribución y movimientos especiales de mercaderías</h1>
-            <p>Nuestros más de <span class="txtNisa">50 años en el rubro</span> le garantizan un servicio eficiente y eficaz para el transporte de sus mercancías.</p>
-        
-    </section>
-
-
-
-    <!--   Tarjetas-->
     <section class="container-card">
         <div class="card">
-        <figure>
-            <img src="img/generales.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Cargas Generales</h3>
-            <p>Poseemos flota disponible para diferente tipos de cargas generales.</p>
-            <a href="#">Leer Más</a>
-        </div>
-        </div>
-        <div class="card">
-        <figure>
-            <img src="img/peligrosas.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Cargas Peligrosas</h3>
-            <p>Poseemos habilitación para cargas peligrosas. Cargas Tipo IMO 1, 2 y 3.</p>
-            <a href="#">Leer Más</a>
-        </div>
+            <figure>
+                <img src="./img/generales.jpg" alt="">
+            </figure>
+            <div class="contenido-card">
+                <h3>Cargas Generales</h3>
+                <p>Poseemos flota disponible para diferente tipos de cargas generales.</p>
+                <a href="./pages/servicios.html#soporte">Ver Más</a>
+            </div>
         </div>
         <div class="card">
-        <figure>
-            <img src="img/corporativa.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Logística Corporativa</h3>
-            <p>Nuestros servicios de Logística resuelven integralmente sus necesidades.</p>
-            <a href="#">Leer Más</a>
+            <figure>
+                <img src="./img/peligrosas.jpg">
+            </figure>
+            <div class="contenido-card">
+                <h3>Cargas Peligrosas</h3>
+                <p>Poseemos habilitación para cargas peligrosas. Cargas Tipo IMO 1, 2 y 3.</p>
+                <a href="./pages/servicios.html#consultoria">Ver Más</a>
+            </div>
         </div>
+        <div class="card">
+            <figure>
+                <img src="./img/automotriz.jpg">
+            </figure>
+            <div class="contenido-card">
+                <h3>Logística Corporativa</h3>
+                <p>Nuestros servicios de Logística resuelven integralmente sus necesidades.</p>
+                <a href="./pages/servicios.html#desarrollo">Ver Más</a>
+            </div>
         </div>
+        <div class="card">
+            <figure>
+                <img src="./img/portuarios.jpg">
+            </figure>
+            <div class="contenido-card">
+                <h3>Portuarios</h3>
+                <p>Nuestros servicios de Logística resuelven integralmente sus necesidades.</p>
+                <a href="./pages/servicios.html#identidad">Ver Más</a>
+            </div>
+        </div>
+        
     </section>
-    <!--Fin   Tarjetas-->
+    <section class="outro-content"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo corrupti.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime consequuntur quod quibusdam rerum modi deleniti facere ullam sequi, aperiam asperiores impedit enim vel ipsam quia et quam eligendi alias.</p>
+    </section>
 
-    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap pb-3">
-        <p class="fs-5 px-3  pt-3">Transportes Nisa &copy; 2024. Todos Los Derechos Reservados.</p>
-        <div id="iconos">
-            <a href="https://www.instagram.com/tnisasrl"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100063665315110&ref=hl"><i class="bi bi-facebook"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5491160151787"><i class="bi bi-whatsapp"></i></a>      
-        </div>
-      </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <footer>
+      <h4>Transportes NISA S.R.L. ©2024. Todos los derechos reservados.</h4>
+      <div class="iconos">
+        <a href="https://www.instagram.com/tnisasrl" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100063665315110" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5491160151787" target="_blank"><i class="bi bi-whatsapp"></i></a>      
+      </div>
+      <div class="domicilio">
+        <p>Av. Bernardo Ader 3699, Carapachay, Vicente López, Buenos Aires, Argentina, B1606DVE</p>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.8891083671724!2d-58.5482977892419!3d-34.53103737286776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0a458a360b7%3A0x65755c449e001358!2sAv.%20Bernardo%20Ader%203699%2C%20B1606DVG%20Villa%20Adelina%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714923573742!5m2!1ses-419!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
 </html>
